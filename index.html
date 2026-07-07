@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <title>❤️ Love Story</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="welcome">
+
+    <div class="welcome-box">
+
+        <div class="welcome-heart">
+            ❤️
+        </div>
+
+        <h1>مرحبًا يا مريم</h1>
+
+        <p>
+
+            عملتلك مكان صغير...
+
+            <br>
+
+            فيه كل ذكرياتنا ❤️
+
+        </p>
+
+        <button onclick="enterWebsite()">
+
+            افتحي الهدية 🎁
+
+        </button>
+
+    </div>
+
+</div>
+<!-- ================= LOVE LETTER ================= -->
+
+<section class="love-letter">
+
+    <div class="letter-box">
+
+        <h2>💌 رسالة ليكي</h2>
+
+        <p id="typingText"></p>
+
+    </div>
+
+</section>
+    <!-- ================= NAVBAR ================= -->
+    
+    <nav class="navbar">
+      <div class="logo">❤️ Love Story</div>
+
+      <ul class="nav-links">
+
+    <li><a href="#home">الرئيسية</a></li>
+
+    <li><a href="#counter">عداد العلاقة</a></li>
+
+    <li><a href="#memories">ذكرياتنا</a></li>
+
+    <li><a href="#gallery">معرض الصور</a></li>
+
+    <li><a href="#timeline">رحلة حبنا</a></li>
+
+    <li><a href="#message">رسالة اليوم</a></li>
+
+</ul>
+    </nav>
+    
+    <!-- ================= HERO ================= -->
+
+    <div class="hero-content">
+
+    <div class="hero-badge">
+        ❤️ Made With Love
+    </div>
+
+    <img src="assets/images/maryam.jpg" class="hero-image">
+
+    <h1>
+
+        يا مريم
+
+    </h1>
+
+    <h3>
+
+        Welcome To Our Story
+
+    </h3>
+
+    <p>
+
+        كل لحظة بينا محفوظة هنا...
+
+        <br>
+
+        وكل ذكرى ليها مكان ❤️
+
+    </p>
+
+    <small>
+
+        منذ 14 يونيو 2024
+
+    </small>
+
+    <br><br>
+
+    <button onclick="scrollToCounter()">
+
+        ابدئي الرحلة
+
+    </button>
+
+</div>
+    <!-- ================= RELATIONSHIP COUNTER ================= -->
+
+    <section class="counter-section" id="counter">
+      <h2>💖 عداد علاقتنا 💖</h2>
+
+      <div class="counter-container">
+        <div class="card">
+          <h3 id="years">0</h3>
+          <span>سنة</span>
+        </div>
+
+        <div class="card">
+          <h3 id="months">0</h3>
+          <span>شهر</span>
+        </div>
+
+        <div class="card">
+          <h3 id="days">0</h3>
+          <span>يوم</span>
+        </div>
+
+        <div class="card">
+          <h3 id="hours">00</h3>
+          <span>ساعة</span>
+        </div>
+
+        <div class="card">
+          <h3 id="minutes">00</h3>
+          <span>دقيقة</span>
+        </div>
+
+        <div class="card">
+          <h3 id="seconds">00</h3>
+          <span>ثانية</span>
+        </div>
+      </div>
+    </section>
+    <section class="memories" id="memories">
+      <h2>📸 ذكرياتنا</h2>
+
+      <div class="memory-grid">
+        <div class="memory-card">
+          <div class="icon">📷</div>
+          <h3>أول صورة</h3>
+          <p>أول صورة جمعتنا مع بعض ❤️</p>
+        </div>
+
+        <div class="memory-card">
+          <div class="icon">☕</div>
+          <h3>أول خروجة</h3>
+          <p>أحلى يوم بدأنا فيه نحكي ونضحك.</p>
+        </div>
+
+        <div class="memory-card">
+          <div class="icon">🎁</div>
+          <h3>أول هدية</h3>
+          <p>أول هدية بينا ولسه فاكرها.</p>
+        </div>
+
+        <div class="memory-card">
+          <div class="icon">🎂</div>
+          <h3>أول عيد ميلاد</h3>
+          <p>أجمل احتفال عملناه سوا.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery" id="gallery">
+      <h2>📷 معرض صورنا</h2>
+
+      <div class="gallery-grid">
+        <img src="assets/images/1.jpg" onclick="openImage(this.src)" />
+        <img src="assets/images/2.jpg" onclick="openImage(this.src)" />
+        <img src="assets/images/3.jpg" onclick="openImage(this.src)" />
+        <img src="assets/images/4.jpg" onclick="openImage(this.src)" />
+        <img src="assets/images/5.jpg" onclick="openImage(this.src)" />
+        <img src="assets/images/6.jpg" onclick="openImage(this.src)" />
+      </div>
+    </section>
+
+    <!-- نافذة عرض الصورة -->
+
+    <div id="lightbox">
+      <span onclick="closeImage()">&times;</span>
+
+      <img id="lightbox-img" />
+    </div>
+    <!-- ================= DAILY MESSAGE ================= -->
+
+    <section class="daily-message" id="message">
+      <h2>💌 رسالة اليوم</h2>
+
+      <div class="message-card">
+        <p id="loveMessage"></p>
+
+        <button onclick="newMessage()">رسالة جديدة ❤️</button>
+      </div>
+    </section>
+    <!-- ================= TIMELINE ================= -->
+
+    <section class="timeline" id="timeline">
+      <h2>❤️ رحلة حبنا ❤️</h2>
+
+      <div class="timeline-container">
+        <div class="timeline-item left">
+          <div class="content">
+            <h3>14 / 06 / 2024 ❤️</h3>
+
+            <p>بداية أجمل قصة في حياتي.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="content">
+            <h3>☕ أول خروجة</h3>
+
+            <p>أول مرة خرجنا فيها سوا.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="content">
+            <h3>📷 أول صورة</h3>
+
+            <p>أول صورة احتفظنا بيها.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="content">
+            <h3>🎁 أول هدية</h3>
+
+            <p>أول هدية بينا.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="content">
+            <h3>🎂 أول عيد ميلاد</h3>
+
+            <p>أحلى احتفال.</p>
+          </div>
+        </div>
+        
+      </div>
+      <!-- ================= REASONS ================= -->
+
+<section class="reasons" id="reasons">
+
+    <h2>❤️ أسباب حبي ليكي ❤️</h2>
+
+    <div class="reason-card">
+
+        <div class="reason-number">
+
+            <span id="reasonNumber">1</span>
+
+            <small>من 50</small>
+
+        </div>
+
+        <p id="reasonText">
+
+            بحب ضحكتك لأنها بتنور يومي ❤️
+
+        </p>
+
+        <button onclick="nextReason()">
+
+            سبب جديد 💖
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= MUSIC ================= -->
+
+<section class="music-player" id="music">
+
+    <h2>🎵 أغنيتنا 🎵</h2>
+
+    <div class="player-card">
+
+        <img src="assets/images/music-cover.jpg" class="cover">
+
+      <h3>🎵 سيب إيدي وافتح قلبك ❤️</h3>
+
+<p>أغنيتنا المفضلة</p>
+
+        <audio id="audio">
+    <source src="assets/music/seeb-eedy.mp3" type="audio/mpeg">
+</audio>
+
+        <input
+            type="range"
+            id="progress"
+            value="0"
+        >
+
+        <div class="controls">
+
+            <button onclick="prevSong()">⏮</button>
+
+            <button id="playBtn" onclick="playMusic()">▶</button>
+
+            <button onclick="nextSong()">⏭</button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SURPRISE ================= -->
+
+<section class="surprise-section" id="surprise">
+
+    <h2>🎁 صندوق المفاجآت 🎁</h2>
+
+    <div class="gift-box" id="giftBox" onclick="openGift()">
+
+    <div class="gift-lid"></div>
+
+    <div class="gift-body"></div>
+
+    <div class="gift-ribbon-v"></div>
+
+    <div class="gift-ribbon-h"></div>
+
+</div>
+
+<p class="gift-text">
+    اضغطي لفتح المفاجأة ❤️
+</p>
+
+</section>
+<!-- ================= LOVE GAME ================= -->
+
+<section class="love-game" id="game">
+
+    <h2>🎮 لعبة تعرفني قد إيه؟ ❤️</h2>
+
+    <div class="game-card">
+
+        <h3 id="question">
+            أنا بحب القهوة ولا الشاي؟
+        </h3>
+
+        <div class="answers">
+
+            <button onclick="checkAnswer(0)">
+                ☕ قهوة
+            </button>
+
+            <button onclick="checkAnswer(1)">
+                🍵 شاي
+            </button>
+
+        </div>
+
+        <h3 id="result"></h3>
+
+        <button onclick="nextQuestion()">
+            السؤال التالي ➜
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= POPUP ================= -->
+
+<div id="popup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <div id="popupContent"></div>
+
+    </div>
+
+</div>
+<!-- ================= END SECTION ================= -->
+
+<section class="ending" id="ending">
+
+    <div class="ending-content">
+
+        <div class="ending-heart">
+            ❤️
+        </div>
+
+        <h2>شكراً إنك دخلتي حياتي</h2>
+
+        <h1>I LOVE YOU FOREVER</h1>
+
+        <p>
+
+            يمكن الأيام تتغير...
+
+            <br>
+
+            لكن حاجة واحدة عمرها ما هتتغير...
+
+            <br><br>
+
+            ❤️ حبي ليكي ❤️
+
+        </p>
+                <div class="scroll-down">
+
+↓
+
+</div>
+        <button onclick="backToTop()">
+
+            ابدئي الرحلة من جديد ⬆
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= MEMORY BOOK ================= -->
+
+<section class="memory-book" id="book">
+
+    <h2>📖 كتاب ذكرياتنا</h2>
+
+    <div class="book">
+
+        <img id="bookImage" src="assets/images/book1.jpg">
+
+        <h3 id="bookTitle">
+            أول صورة ❤️
+        </h3>
+
+        <p id="bookText">
+            أول مرة اتصورنا فيها... ولسه فاكر اللحظة دي كأنها امبارح.
+        </p>
+
+        <small id="bookDate">
+            14 / 06 / 2024
+        </small>
+
+        <div class="book-buttons">
+
+            <button onclick="prevPage()">⬅ السابق</button>
+
+            <button onclick="nextPageBook()">التالي ➜</button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= LOVE REASONS ================= -->
+
+<section class="love-reasons" id="love-reasons">
+
+    <h2>❤️ 100 سبب بحبك ❤️</h2>
+
+    <div class="reason-box">
+
+        <div class="reason-count">
+            <span id="reasonIndex">1</span>
+            /100
+        </div>
+
+        <h3 id="reasonTitle">
+            السبب الأول
+        </h3>
+
+        <p id="reasonContent">
+
+            بحب ضحكتك لأنها بتخليني أنسى أي حاجة وحشة ❤️
+
+        </p>
+
+        <button onclick="nextLoveReason()">
+
+            سبب جديد 💖
+
+        </button>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <h2>❤️ Made With Love ❤️</h2>
+
+    <p>
+
+        شكراً إنك دخلتي حياتي...
+
+        <br>
+
+        وهفضل أحبك كل يوم أكتر من اللي قبله.
+
+    </p>
+
+    <h3>
+
+        I LOVE YOU FOREVER
+
+    </h3>
+
+</footer>
+<div class="music-bar">
+
+    <button onclick="playMusic()">
+
+        ▶
+
+    </button>
+
+    <span>
+
+        ❤️ Our Song
+
+    </span>
+
+</div>
+    </section>
+    
+    <!-- Floating Hearts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</html>
