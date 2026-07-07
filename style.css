@@ -1738,3 +1738,203 @@ body::before {
     width: 90%;
   }
 }
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .navbar {
+    width: 95%;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content h3 {
+    font-size: 24px;
+  }
+
+  .counter-container,
+  .memory-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 95%;
+    padding: 15px;
+
+    border-radius: 20px;
+
+    flex-direction: column;
+
+    height: auto;
+
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 120px 20px 60px;
+
+    text-align: center;
+
+    min-height: 100vh;
+  }
+
+  .hero-image {
+    width: 170px;
+
+    height: 170px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content h3 {
+    font-size: 20px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+
+    line-height: 32px;
+  }
+
+  .hero-content button {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
+  .counter-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 34px;
+  }
+
+  .memory-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-container::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+
+    left: 0 !important;
+
+    padding: 0 0 30px 55px;
+  }
+
+  .timeline-item::after {
+    left: 8px;
+
+    right: auto;
+  }
+
+  .book {
+    padding: 20px;
+  }
+
+  .book img {
+    height: 220px;
+  }
+
+  .book-buttons {
+    flex-direction: column;
+  }
+
+  .answers {
+    flex-direction: column;
+  }
+
+  .answers button {
+    width: 100%;
+  }
+
+  .music-bar {
+    width: 95%;
+  }
+
+  .popup-box {
+    width: 95%;
+
+    padding: 20px;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 34px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  h3 {
+    font-size: 22px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+
+    line-height: 28px !important;
+  }
+
+  .counter-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    width: 140px;
+
+    height: 140px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
